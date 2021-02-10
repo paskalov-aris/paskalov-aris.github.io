@@ -93,7 +93,7 @@ earningsBtn.addEventListener("click", function () {
             item7: {img: "img/earnings/game-engine.png", name: "Свой игровой движок", perSecond: 150, cost: 750000},
             item8: {img: "img/earnings/hosting.png", name: "Свой хостинг", perSecond: 220, cost: 1700000},
             item9: {img: "img/earnings/mmo-rpg.png", name: "ММО РПГ", perSecond: 300, cost: 3900000},
-            item10: {img: "img/earnings/autopilot-system", name: "Система автопилотов", perSecond: 420, cost: 10000000}
+            item10: {img: "img/earnings/autopilot-system.png", name: "Система автопилотов", perSecond: 420, cost: 10000000}
         }
     });
 });
