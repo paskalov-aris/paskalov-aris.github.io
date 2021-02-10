@@ -81,5 +81,19 @@ softwareBtn.addEventListener("click", function () {
 });
 
 earningsBtn.addEventListener("click", function () {
-
+    createModal({
+        header: "Покупка софта",
+        items: {
+            item1: {img: "img/earnings/computer-game.png", name: "Компьютерная игра", perSecond: 5, cost: 5000},
+            item2: {img: "img/earnings/blog.png", name: "Блог", perSecond: 2, cost: 11500},
+            item3: {img: "img/earnings/social-media.png", name: "Социальная сеть", perSecond: 30, cost: 26500},
+            item4: {img: "img/earnings/virus.png", name: "Вирус", perSecond: 45, cost: 60000},
+            item5: {img: "img/earnings/game-server.png", name: "Игровой сервер", perSecond: 60, cost: 140000},
+            item6: {img: "img/earnings/online-shop.png", name: "Интернет Магазин", perSecond: 100, cost: 320000},
+            item7: {img: "img/earnings/game-engine.png", name: "Свой игровой движок", perSecond: 150, cost: 750000},
+            item8: {img: "img/earnings/hosting.png", name: "Свой хостинг", perSecond: 220, cost: 1700000},
+            item9: {img: "img/earnings/mmo-rpg.png", name: "ММО РПГ", perSecond: 300, cost: 3900000},
+            item10: {img: "img/earnings/autopilot-system", name: "Система автопилотов", perSecond: 420, cost: 10000000}
+        }
+    });
 });
