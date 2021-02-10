@@ -82,7 +82,7 @@ softwareBtn.addEventListener("click", function () {
 
 earningsBtn.addEventListener("click", function () {
     createModal({
-        header: "Покупка софта",
+        header: "Заработок",
         items: {
             item1: {img: "img/earnings/computer-game.png", name: "Компьютерная игра", perSecond: 5, cost: 5000},
             item2: {img: "img/earnings/blog.png", name: "Блог", perSecond: 2, cost: 11500},
