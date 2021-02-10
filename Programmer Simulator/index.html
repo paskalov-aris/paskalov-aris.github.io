@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Симулятор программиста</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="game-wrapper">
+    <header class="header">
+        <div class="header__body">
+            <ul class="header__indicators indicators">
+                <li class="indicators__item">
+                    <p class="indicators__money"><span id="money">0</span>$</p>
+                </li>
+                <li class="indicators__item">
+                    <p class="indicators__code"><span id="counter">0</span> кода</p>
+                </li>
+                <li class="indicators__item">
+                    <p class="indicators__speed"><span id="speed">0</span>/сек</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__body">
+            <img src="img/programming-coding-computer-512.png" alt="Computer Image" class="main__image">
+            <button class="main__button" id="button">Кодить</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__body">
+            <ul class="footer__buttons">
+                <li class="footer__button">
+                    <button id="studying-modal"><img src="img/icons/icon-study.svg" alt="Button Icon"></button>
+                </li>
+                <li class="footer__button">
+                    <button id="software-modal"><img src="img/icons/icon-software.svg" alt="Button Icon"></button>
+                </li>
+                <li class="footer__button">
+                    <button id="earnings-modal"><img src="img/icons/icon-dollar.svg" alt="Button Icon"></button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <audio id="tick">
+        <source src="sounds/sound.mp3">
+    </audio>
+</div>
+
+<script src="js/base.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

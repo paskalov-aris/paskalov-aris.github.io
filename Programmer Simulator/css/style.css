@@ -1,0 +1,325 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #2a2d2f;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.game-wrapper {
+    height: 100vh;
+    max-width: 410px;
+    margin: 0 auto;
+    position: relative;
+
+    background-color: #f2f2f2;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 60px;
+}
+
+.header__indicators {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #131212;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.indicators__item {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.indicators__item p {
+    padding: 5px 0px;
+    border-radius: 5px;
+    background-color: #525251;
+    color: #ddd;
+}
+
+/* Main */
+
+.main__body {
+    /*padding: 100px 0px 40px 0px;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.main__image {
+    max-width: 260px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main__button {
+    --color: #1f89ff;
+    --border-color: #1f89ff;
+    --shadow-color: #1765bd;
+
+    user-select: none;
+    position: relative;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 35px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 2rem;
+    border: none;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    font-weight: bold;
+    background-color: var(--color);
+    box-shadow: 0 -3px var(--color),
+    3px 0 var(--color),
+    0 3px var(--color),
+    -3px 0 var(--color),
+    0 -6px var(--border-color),
+    3px -3px var(--border-color),
+    6px 0 var(--border-color),
+    0 6px var(--border-color),
+    -3px 3px var(--border-color),
+    -6px 0 var(--border-color),
+    -3px -3px var(--border-color),
+    3px 3px var(--border-color),
+    0px 9px var(--shadow-color),
+    3px 6px var(--shadow-color),
+    6px 3px var(--shadow-color),
+    0px 9px var(--shadow-color),
+    -3px 6px var(--shadow-color),
+    -6px 3px var(--shadow-color);
+}
+
+.main__button:active {
+    top: 6px;
+    box-shadow: 0 -3px var(--color),
+    3px 0 var(--color),
+    0 3px var(--color),
+    -3px 0 var(--color),
+    0 -6px var(--border-color),
+    3px -3px var(--border-color),
+    6px 0 var(--border-color),
+    0 6px var(--border-color),
+    -3px 3px var(--border-color),
+    -6px 0 var(--border-color),
+    -3px -3px var(--border-color),
+    3px 3px var(--border-color),
+    0px 6px var(--shadow-color),
+    3px 3px var(--shadow-color),
+    6px 0px var(--shadow-color),
+    0px 6px var(--shadow-color),
+    -3px 3px var(--shadow-color),
+    -6px 0px var(--shadow-color);
+}
+
+.main__button.active {
+    top: 6px;
+    box-shadow: 0 -3px var(--color),
+    3px 0 var(--color),
+    0 3px var(--color),
+    -3px 0 var(--color),
+    0 -6px var(--border-color),
+    3px -3px var(--border-color),
+    6px 0 var(--border-color),
+    0 6px var(--border-color),
+    -3px 3px var(--border-color),
+    -6px 0 var(--border-color),
+    -3px -3px var(--border-color),
+    3px 3px var(--border-color),
+    0px 6px var(--shadow-color),
+    3px 3px var(--shadow-color),
+    6px 0px var(--shadow-color),
+    0px 6px var(--shadow-color),
+    -3px 3px var(--shadow-color),
+    -6px 0px var(--shadow-color);
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    background-color: #131212;
+}
+
+.footer__buttons {
+    padding: 8px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.footer__button button {
+    background-color: #d1d1d1;
+    margin-right: 25px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.footer__button:last-child button {
+    margin-right: 0;
+}
+
+.footer__button img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Modal */
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    background-color: #bfbfbf;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.modal__header {
+    position: relative;
+    box-shadow: 0px 20px 10px #bfbfbf;
+}
+
+.modal__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.modal__close span {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+}
+
+.modal__close span:first-child {
+    right: 5px;
+    transform: rotate(45deg);
+}
+
+.modal__close span:last-child {
+    right: 4px;
+    transform: rotate(-45deg);
+}
+
+.modal__title {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.modal__list {
+    max-height: 400px;
+    overflow-y: scroll;
+
+    padding: 0 10px 0 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.modal__item {
+    background-color: #cacaca;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item__column {
+    display: flex;
+    align-items: center;
+}
+
+.modal__item img {
+    width: 87px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.modal__name {
+    text-transform: uppercase;
+    color: #3c3c3c;
+
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.modal__gainer {
+    color: #3c3c3c;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.modal__button {
+    width: 87px;
+    height: 80px;
+    border: none;
+    background-color: #d7d7d7;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal__button.bought {
+    background-color: #b3b3b3;
+    cursor: default;
+}
+
+.modal__list::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+}
+
+.modal__list::-webkit-scrollbar-thumb {
+    /*width: 5px;*/
+    /*height: 30px;*/
+    background-color: #676767;
+    border-radius: 50px;
+}
